@@ -12,7 +12,7 @@
       "whatsapp-botto"
     ],
     "repository": "https://github.com/well300/tony-stark-.git",
-    "logo": "https://i.pinimg.com/474x/25/2e/c0/252ec0e9dec80cb8e3414f62e9db47be.jpg",
+    "logo": "https://data.whicdn.com/images/336482652/original.jpg",
     "success_url": "/",
     "env": {
       "PREFIX": {
