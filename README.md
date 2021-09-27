@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i.pinimg.com/originals/c1/3e/7f/c13e7f371b14f93e91808200631b8a81.gif" width="700"></br></a>
+<img src="https://i.pinimg.com/originals/c1/3e/7f/c13e7f371b14f93e91808200631b8a81.gif" width="800"></br></a>
 
 # **Tony-stark : The Next Level Void WhatsApp BOTTO**
 [![CodeFactor](https://www.codefactor.io/repository/github/prajjwaldatir/kaoi/badge)](https://www.codefactor.io/repository/github/prajjwaldatir/kaoi)
