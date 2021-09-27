@@ -44,7 +44,7 @@ export default class Command extends BaseCommand {
 ╰────────────┈㊰                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `♡┈〚${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}〛┈♡\n• \`\`\`${categories[
+                text += `❖┈〘${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}〙┈❖\n• \`\`\`${categories[
                     key
                 ]
                     .map((command) => command.config?.command)
