@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            './assets/videos/Chitoge/chitoge.mp4'
+            './assets/videos/chitoge/chitoge.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -35,17 +35,32 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `👋🏻 (💙ω💙) Konichiwa! *${M.sender.username}*, I'm Chitoge.\n\nMy prefix is - ":"\n\nThe usable commands are listed below.\n\n`
+            let text = `
+╭─「（＾∀＾●）ﾉｼ 」
+│❏ User: *${M.sender.username}*
+│❏ Name: 𝙐𝙧𝙖𝙧𝙖𝙠𝙖
+│❏ Prefix: !
+│❏ Owner: <!mod>
+╰────────────┈❥                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
+                text += `♡┈〚${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}〛┈♡\n• \`\`\`${categories[
                     key
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
             return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+            caption: `${text} 
+ ──❁┈[ Uraraka Bᴏᴛ ]┈❁───
+
+┌────────────┈✽
+│   🎀 𝙐𝙧𝙖𝙧𝙖𝙠𝙖
+│   ©️ Synthesized Infinity Botto
+└────────────┈✽
+✽┈[Have Great Day]┈✽
+
+🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
@@ -65,5 +80,5 @@ export default class Command extends BaseCommand {
         )
     }
 
-    emojis = ['♟', '♻️', '🌈', '🎵', '❄', '👑', '🚫', '♦️', '✨']
+    emojis = ['🎈', '✨', '🎁', '🎵', '🌸', '💝', '💐', '🧨', '🎆']
 }
