@@ -11,9 +11,8 @@
       "whatsapp-sticker-bot",
       "whatsapp-botto"
     ],
-    "website": "https://github.com/ShinNouzen/Chitoge#readme",
-    "repository": "https://github.com/ShinNouzen/Chitoge.git",
-    "logo": "https://c4.wallpaperflare.com/wallpaper/67/362/530/anime-nisekoi-chitoge-kirisaki-wallpaper-preview.jpg",
+    "repository": "https://github.com/well300/tony-stark-.git",
+    "logo": "https://i.pinimg.com/474x/25/2e/c0/252ec0e9dec80cb8e3414f62e9db47be.jpg",
     "success_url": "/",
     "env": {
       "PREFIX": {
