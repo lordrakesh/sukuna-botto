@@ -1,5 +1,5 @@
 {
-    "name": "tony-stark-",
+    "name": "gojo",
     "description": "Maintained Fork of Void",
     "keywords": [
       "bot",
@@ -11,8 +11,8 @@
       "whatsapp-sticker-bot",
       "whatsapp-botto"
     ],
-    "repository": "https://github.com/well300/tony-stark-.git",
-    "logo": "https://data.whicdn.com/images/336482652/original.jpg",
+    "repository": "https://github.com/well300/gojo.git",
+    "logo": "https://i1.sndcdn.com/avatars-86LshkD3wJxXpSkK-gvUDkA-t240x240.jpg",
     "success_url": "/",
     "env": {
       "PREFIX": {
