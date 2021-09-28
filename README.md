@@ -14,7 +14,6 @@
 
 ## ⚡ Chitoge
 - To Deploy Chitoge Botto, click here➡️[https://github.com/ShinNouzen/Chitoge)
-- 
 ## ✨ Highlights
 - Fully Modular Design
 - Object Oriented
