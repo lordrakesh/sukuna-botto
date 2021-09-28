@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
             caption
         ).catch((reason: any) => M.reply(`✖ An error occupered, Reason: ${reason}`))
         M.reply(await track.getAudio(), MessageType.audio).catch((reason: any) =>
-            M.reply(`✖ An error occurred, Reason: ${reason}`)
+            M.reply(`❌ An error occurred, Reason: ${reason}`)
         )
     }
 }
