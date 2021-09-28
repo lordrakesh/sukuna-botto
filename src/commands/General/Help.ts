@@ -19,9 +19,9 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            './assets/videos/chitoge/chitoge.mp4'
+            './assets/videos/gojo/gojo.mp4'
         ]
-        let chitoge = n[Math.floor(Math.random() * n.length)]
+        let gojo = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
             const commands = this.handler.commands.keys()
             const categories: { [key: string]: ICommand[] } = {}
@@ -49,7 +49,7 @@ export default class Command extends BaseCommand {
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
+            return void this.client.sendMessage(M.from, { url: gojo }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: `${text} 
  ──⁂┈[ Uraraka Bᴏᴛ ]┈⁂───
