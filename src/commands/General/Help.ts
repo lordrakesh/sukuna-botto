@@ -19,9 +19,9 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            './assets/videos/gojo/gojo.mp4'
+            './assets/videos/sukuna/sukuna.mp4'
         ]
-        let gojo = n[Math.floor(Math.random() * n.length)]
+        let sukuna = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
             const commands = this.handler.commands.keys()
             const categories: { [key: string]: ICommand[] } = {}
@@ -36,12 +36,12 @@ export default class Command extends BaseCommand {
                 }
             }
             let text = `
-╭─「＜（＾－＾）＞」
+╭─「(_　_)。゜zｚＺ」
 │❏ User: *${M.sender.username}*
-│❏ Name: 𝐆𝐨𝐣𝐨
+│❏ Name: ʂυƙυɳα
 │❏ Prefix: !
 │❏ Owner: <!mod>
-╰────────────┈㊰                 \n\n`
+╰────────────┈㊰                  \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `❖┈〘${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}〙┈❖\n• \`\`\`${categories[
@@ -49,13 +49,13 @@ export default class Command extends BaseCommand {
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void this.client.sendMessage(M.from, { url: gojo }, MessageType.video, {
+            return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: `${text} 
- ──⁂┈[ Uraraka Bᴏᴛ ]┈⁂───
+ ──⁂┈[ ʂυƙυɳα ზσƚ ]┈⁂───
 
 ┌────────────┈⁂
-│   🎇 𝐆𝐨𝐣𝐨
+│   ⚡ ʂυƙυɳα
 │   ©️ Synthesized Infinity Botto
 └────────────┈⁂
 ⁂┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈⁂
