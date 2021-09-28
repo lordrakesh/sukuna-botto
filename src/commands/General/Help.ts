@@ -41,7 +41,7 @@ export default class Command extends BaseCommand {
 │⎚ Name: ʂυƙυɳα
 │⎚ Prefix: !
 │⎚ Owner: <!mod>
-╰────────────┈㊰                  \n\n`
+╰────────────┈太陽                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `❖┈ᕮ✧${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}✧ᕭ┈❖\n• \`\`\`${categories[
@@ -52,13 +52,13 @@ export default class Command extends BaseCommand {
             return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: `${text} 
- ──⁂┈[ ʂυƙυɳα ზσƚ ]┈⁂───
+ ──火┈[ ʂυƙυɳα ზσƚ ]┈火───
 
-┌────────────┈⁂
+┌────────────┈火
 │   ⚡ ʂυƙυɳα
 │   ©️ Synthesized Infinity Botto
 └────────────┈⁂
-⁂┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈⁂
+火┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈火
 
 🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
@@ -80,5 +80,5 @@ export default class Command extends BaseCommand {
         )
     }
 
-    emojis = ['☄', '✨', '🌠', '🎶', '🌀', '❄', '🌟', '♨', '🎆']
+    emojis = ['🈷️', '🈹️', '🈯️', '☮', '🈳️', '🈵️', '🈂️', '㊗️', '🈁️']
 }
