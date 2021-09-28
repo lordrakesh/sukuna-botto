@@ -13,7 +13,8 @@
 <br/>
 
 ## ⚡ Chitoge
-- To Deploy Chitoge Botto, click here➡️[Chitoge][https://github.com/ShinNouzen/Chitoge)
+- To Deploy Chitoge Botto, click here➡️[Chitoge.md](https://github.com/ShinNouzen/Chitoge.md)
+
 ## ✨ Highlights
 - Fully Modular Design
 - Object Oriented
