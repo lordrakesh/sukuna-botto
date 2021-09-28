@@ -37,10 +37,10 @@ export default class Command extends BaseCommand {
             }
             let text = `
 ╭─「(_　_)。゜zｚＺ」
-│❏ User: *${M.sender.username}*
-│❏ Name: ʂυƙυɳα
-│❏ Prefix: !
-│❏ Owner: <!mod>
+│⎚ User: *${M.sender.username}*
+│⎚ Name: ʂυƙυɳα
+│⎚ Prefix: !
+│⎚ Owner: <!mod>
 ╰────────────┈㊰                  \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
