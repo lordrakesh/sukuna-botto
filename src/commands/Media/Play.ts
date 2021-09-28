@@ -25,20 +25,20 @@ export default class Command extends BaseCommand {
         if (!videos || videos.length <= 0) return void M.reply(`⚓ No Matching videos found for the term : *${term}*`)
         const audio = new YT(videos[0].url, 'audio')
         if (!audio.url) return
-        M.reply('❖ Sending...')
+        M.reply('火 Sending..⌛')
         this.client
             .sendMessage(M.from, await audio.getBuffer(), MessageType.audio, {
                 quoted: M.WAMessage,
                 contextInfo: {
                     externalAdReply: {
                         title: videos[0].title.substr(0, 30),
-                        body: `author : ${videos[0].author.name.substr(0, 20)}\n❖ 𝐆𝐨𝐣𝐨 ❖`,
+                        body: `author : ${videos[0].author.name.substr(0, 20)}\n火 ʂυƙυɳα`,
                         mediaType: 2,
                         thumbnailUrl: `https://i.ytimg.com/vi/${audio.id}/hqdefault.jpg`,
                         mediaUrl: audio.url
                     }
                 }
             })
-            .catch((reason: Error) => M.reply(`✖ An error occurred, Reason: ${reason}`))
+            .catch((reason: Error) => M.reply(`❌ An error occurred, Reason: ${reason}`))
     }
 }
