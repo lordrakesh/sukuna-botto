@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
             './assets/videos/Sukuna/sukuna-git.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
-        return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
+        return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: `火 ʂυƙυɳα\n\n⚜ *Description: Contact owner for repo *<!mod/>* \n\n\n` }
         )
