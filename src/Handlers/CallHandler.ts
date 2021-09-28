@@ -31,6 +31,6 @@ export default class CallHandler {
         ]
 
         await this.client.sendWA(`${tag},${JSON.stringify(json)}`)
-        await this.client.sendMessage(caller, `I'm sorry. I'm not able to pickup calls.`, MessageType.text)
+        await this.client.sendMessage(caller, `i don't fookin pickup the calls so, please don't call me.`, MessageType.text)
     }
 }
