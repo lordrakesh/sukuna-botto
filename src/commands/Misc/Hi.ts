@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
         const n = [
             './assets/videos/Sukuna/sukuna-hi.mp4'
         ]
-        let chatogi = n[Math.floor(Math.random() * n.length)]
+        let chitoge = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: `❖ Hi there it's 𝐆𝐨𝐣𝐨 how you doing..? \n` }
