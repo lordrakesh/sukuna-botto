@@ -8,7 +8,7 @@ import { IParsedArgs, ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'sticker',
+            command: 'sticker, kawaii',
             aliases: ['s'],
             description: 'Converts images/videos into stickers',
             category: 'utils',
@@ -78,8 +78,8 @@ export default class Command extends BaseCommand {
             })()
             return {
                 categories,
-                pack: pack[1] || '❖ 𝙗𝙚𝙡𝙤𝙣𝙜𝙨 𝙩𝙤',
-                author: pack[2] || '𝙠𝙖𝙬𝙖𝙞𝙞 𝙗𝙖𝙠𝙖❖',
+                pack: pack[1] || '平和 𝙗𝙚𝙡𝙤𝙣𝙜𝙨 𝙩𝙤',
+                author: pack[2] || '𝙠𝙖𝙬𝙖𝙞𝙞 𝙗𝙖𝙠𝙖 💕',
                 quality,
                 type: StickerTypes[
                     parsedArgs.flags.includes('--crop') || parsedArgs.flags.includes('--c')
