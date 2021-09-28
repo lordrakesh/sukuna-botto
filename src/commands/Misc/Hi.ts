@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         let sukuna = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `火 Hi there it's ʂυƙυɳα how you doing..? \n` }
+            caption: `火 ɠαɱზαɾҽ ɠαɱზαɾҽ.. \n` }
         )
     }
 }
