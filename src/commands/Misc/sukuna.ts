@@ -17,12 +17,12 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            './assets/videos/Chitoge/chitoge-git.mp4'
+            './assets/videos/Sukuna/sukuna-git.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `❖ *gojo* ❖\n\n🍀 *Description: Contact owner for repo *<!mod/>* \n\n\n` }
+            caption: `❖ *sukuna* ❖\n\n🍀 *Description: Contact owner for repo *<!mod/>* \n\n\n` }
         )
     }
 }
