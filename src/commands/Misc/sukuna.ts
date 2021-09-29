@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
             command: 'sukuna',
             description: 'Displays the info.',
             category: 'misc',
-            usage: `${client.config.prefix}chitoge`
+            usage: `${client.config.prefix}sukuna`
         })
     }
 
@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         let sukuna = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `火 ʂυƙυɳα\n\n⚜ *Description: Contact owner for repo *<!mod/>* \n\n\n` }
+            caption: `火 ʂυƙυɳα\n\n⚜ 🍁 *Description: Simple Wa Bot Made with Typescript*\n\n🍄 *URL: https://github.com/lordrakesh/sukuna-botto* \n\n 👒 *Guide: https://github.com/lordrakesh/Sukuna-Guides*\n` }
         )
     }
 }
