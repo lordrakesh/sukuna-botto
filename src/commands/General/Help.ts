@@ -40,7 +40,7 @@ export default class Command extends BaseCommand {
 │⎚ Username: *${M.sender.username}*
 │⎚ Bot Name: ʂυƙυɳα
 │⎚ Prefix: /
-│⎚ Creator: ${"918473956301@s.whatsapp.net"}
+│⎚ Creator: *_Lord Rakesh_*
 ╰────────────┈太陽                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
