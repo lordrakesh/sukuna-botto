@@ -1,6 +1,6 @@
 {
     "name": "sukuna",
-    "description": "Maintained Fork of Void",
+    "description": "Simple Wa Bot",
     "keywords": [
       "bot",
       "whatsapp",
@@ -11,7 +11,7 @@
       "whatsapp-sticker-bot",
       "whatsapp-botto"
     ],
-    "repository": "https://github.com/well300/sukuna.git",
+    "repository": "https://github.com/lordrakesh/sukuna-botto.git",
     "logo": "https://pbs.twimg.com/media/Eu4b9JaXEAAeByb.jpg",
     "success_url": "/",
     "env": {
