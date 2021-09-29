@@ -65,7 +65,7 @@ export default class Command extends BaseCommand {
             // console.log(image)
             const sticker = new Sticker(await getImage(image), {
                 pack: `Triggered`,
-                author: M.sender.username || `Chitoge`,
+                author: M.sender.username || `sukuna`,
                 type: 'full',
                 categories: ['💢']
             })
