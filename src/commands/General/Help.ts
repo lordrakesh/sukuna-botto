@@ -37,10 +37,10 @@ export default class Command extends BaseCommand {
             }
             let text = `
 ╭─「(_　_)。゜zｚＺ」
-│⎚ User: *${M.sender.username}*
-│⎚ Name: ʂυƙυɳα
-│⎚ Prefix: !
-│⎚ Owner: <!mod>
+│⎚ Username: *${M.sender.username}*
+│⎚ Bot Name: ʂυƙυɳα
+│⎚ Prefix: /
+│⎚ Creator: ${"918473956301@s.whatsapp.net"}
 ╰────────────┈太陽                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
@@ -56,11 +56,11 @@ export default class Command extends BaseCommand {
 
 ┌────────────┈火
 │   ⚡ ʂυƙυɳα
-│   ©️ Synthesized Infinity Botto
+│   🖤 Simple Wa Bot
 └────────────┈⁂
 火┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈火
 
-🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+🧣 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
