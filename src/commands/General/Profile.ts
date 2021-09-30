@@ -28,9 +28,9 @@ export default class Command extends BaseCommand {
         try {
             pfp = await this.client.getProfilePicture(user)
         } catch (err) {
-            M.reply(`Profile Picture not Accessible of ${username}`)
+            M.reply(`Profile Picture not Accessible of ${username} So You Will See One Of My Cute Profile Picture 🐝`)
             pfp =
-                'https://i.pinimg.com/736x/ca/e7/8a/cae78ad7f8e6459ad20bde350e2eb78b.jpg'
+                'https://i.postimg.cc/2SgcdpZW/101f0f27c7b36c857a4ce7becf218c52.jpg'
         }
         const data = await this.client.getUser(user)
         await M.reply(
