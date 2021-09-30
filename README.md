@@ -45,9 +45,9 @@
 
 Please give this repo a star ⭐ if it helped you.
 
-## 🌐 Join Us
+## 🏴 Join Us
 
-### 🟢 WhatsApp Group
+### 🍏 WhatsApp Group
 
 # [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/JSpzoZ2bwCa13318uGCaLe)
 
