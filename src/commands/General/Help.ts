@@ -36,12 +36,9 @@ export default class Command extends BaseCommand {
                 }
             }
             let text = `
-╭─「(_　_)。゜zｚＺ」
-│⎚ Username: *${M.sender.username}*
-│⎚ Bot Name: ʂυƙυɳα
-│⎚ Prefix: /
-│⎚ Creator: *_Lord Rakesh_*
-╰────────────┈太陽                 \n\n`
+Konichiwa! ${M.sender.username}, I'm Sukuna , Know Your Place Fool 太陽👒
+
+Pefix 🐾 - /                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `❖┈ᕮ✧${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}✧ᕭ┈❖\n• \`\`\`${categories[
@@ -52,13 +49,12 @@ export default class Command extends BaseCommand {
             return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: `${text} 
- ──火┈[ ʂυƙυɳα ზσƚ ]┈火───
+ 
+Sooooo, My work is done. Bye! 
 
-┌────────────┈火
-│   ⚡ ʂυƙυɳα
-│   🖤 Simple Wa Bot
-└────────────┈⁂
-火┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈火
+Any problem? Don't Summon Me Again (๑•﹏•)
+
+火┈[𝐆𝐚𝐦𝐛𝐚𝐫𝐞 𝐆𝐚𝐦𝐛𝐚𝐫𝐞]┈火
 
 🧣 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
