@@ -60,7 +60,7 @@ export default class MessageHandler {
                 sender.username
             )} in ${chalk.cyanBright(groupMetadata?.subject || 'DM')}`
         )
-        if (!command) return void M.reply('*Ah shit you dont know how to type /help Well fine in that case you die here*.')
+        if (!command) return void M.reply('_Ah shit man you dont know how to type /help Well fine in that case you die here_.')
         const user = await this.client.getUser(M.sender.jid)
         if (user.ban) return void M.reply("You're Banned from using commands.")
         const state = await this.client.DB.disabledcommands.findOne({ command: command.config.command })
