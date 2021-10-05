@@ -36,9 +36,9 @@ export default class Command extends BaseCommand {
                 }
             }
             let text = `
-Konichiwa! ${M.sender.username}, I'm Sukuna , Know Your Place Fool 太陽👒
+Konichiwa! ${M.sender.username}, I'm Sukuna , Know Your Place Fool 太陽
 
-Pefix 🐾 - /                 \n\n`
+My Pefix - /                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `❖┈ᕮ✧${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}✧ᕭ┈❖\n• \`\`\`${categories[
@@ -50,13 +50,13 @@ Pefix 🐾 - /                 \n\n`
             mimetype: Mimetype.gif,
             caption: `${text} 
  
-Sooooo, My work is done. Bye! 
+_*Sooooo, My work is done. Bye! 
+Don't Summon Me Again (๑•﹏•)*_
 
-Any problem? Don't Summon Me Again (๑•﹏•)
 
 火┈[𝐆𝐚𝐦𝐛𝐚𝐫𝐞 𝐆𝐚𝐦𝐛𝐚𝐫𝐞]┈火
 
-🧣 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+👒 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
