@@ -50,8 +50,8 @@ My Pefix - /                 \n\n`
             mimetype: Mimetype.gif,
             caption: `${text} 
  
-_*Sooooo, My work is done. Bye! 
-Don't Summon Me Again (๑•﹏•)*_
+Sooooo, My work is done. Bye! 
+Don't Summon Me Again (๑•﹏•)
 
 
 火┈[𝐆𝐚𝐦𝐛𝐚𝐫𝐞 𝐆𝐚𝐦𝐛𝐚𝐫𝐞]┈火
