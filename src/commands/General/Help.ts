@@ -56,7 +56,7 @@ Don't Summon Me Again (๑•﹏•)
 
 火┈[𝐆𝐚𝐦𝐛𝐚𝐫𝐞 𝐆𝐚𝐦𝐛𝐚𝐫𝐞]┈火
 
-👒 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+🪵 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
