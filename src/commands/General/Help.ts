@@ -45,7 +45,7 @@ My Pefix - /                 \n\n`
                     key
                 ]
                     .map((command) => command.config?.command)
-                    .join(', ')}\`\`\`\n\n`
+                    .join('\n ')}\`\`\`\n\n`
             return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: `${text} 
