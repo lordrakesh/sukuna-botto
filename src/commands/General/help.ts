@@ -105,7 +105,7 @@ MAKER
 
 🎭 #t3d  <text>
 
-🎭 #logoa <text&text>
+🎭 #logo <text&text>
 
 🎭 #phlogo <text&text>
 
