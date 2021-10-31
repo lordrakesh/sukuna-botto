@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
             command: 'covid',
             description: 'get the covid-19 info of the current place',
             aliases: ['COVID'],
-            category: 'educative',
+            category: 'general',
             usage: `${client.config.prefix}covid [name]`
         })
     }
