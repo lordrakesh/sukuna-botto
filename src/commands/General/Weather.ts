@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
             command: 'weather',
             aliases: ['wthr'],
             description: 'Gives you the weather of the given state or city. ',
-            category: 'educative',
+            category: 'general',
             usage: `${client.config.prefix}weather [place_name]`,
             baseXp: 50
         })
