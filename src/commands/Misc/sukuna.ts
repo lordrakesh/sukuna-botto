@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'sukuna',
-            description: 'Displays the info.',
+            description: 'Say hi to the bot.',
             category: 'misc',
             usage: `${client.config.prefix}sukuna`
         })
@@ -17,12 +17,12 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            './assets/videos/Sukuna/sukuna-git.mp4'
+            './assets/videos/Sukuna/sukuna-hi.mp4'
         ]
         let sukuna = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `Konnichiwa! *${M.sender.username}*, *I'm Sukuna!* I'm ready for help.
+            caption: `Konnichiwa! *${M.sender.username}*, *I'm Sukunai!* I'm ready for help.
 
 My perfix - !
 
@@ -71,7 +71,10 @@ My perfix - !
 
 Sooooo, My work is done. Bye! 
 
-Any problem? Remember me :)
+Any problem? Remember me :)` }
+        )
+    }
+}
           
        
 
