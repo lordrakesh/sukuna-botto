@@ -22,10 +22,56 @@ export default class Command extends BaseCommand {
         let sukuna = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `火 ʂυƙυɳα\n\n⚜ 🍁 *Description: Simple Wa Bot Made with Typescript*\n\n🍄 *URL: https://github.com/lordrakesh/sukuna-botto* \n\n 👒 *Guide: https://github.com/lordrakesh/Sukuna-Guides*\n` }
-        )
-    }
-}
+            caption: `Konnichiwa! *${M.sender.username}*, *I'm Sukuna!* I'm ready for help.
+
+My perfix - !
+
+- 🄶🄴🄽🄴🅁🄰🄻
+
+◍!google
+◍!covid
+◍!github
+◍!profile
+◍!hi
+◍!owner
+◍!support
+◍!xp
+◍!weather
+◍!sukuna
+◍!bot/chat
+
+- 🄼🄴🄳🄸🄰
+
+◍ !sticker
+◍ !toimg
+◍ !play
+◍ !ytmp3
+◍ !ytmp4
+◍ !yts
+◍ !fb
+◍ !ig
+◍ !subreddit
+
+ *- 🄰🄳🄼🄸🄽* 
+
+◍ !add
+◍ !kick
+◍ !promote
+◍ !demote
+◍ !enable antilink
+◍ !tagall
+◍ !hidetag
+◍ !linkgroup
+
+- 🅆🄴🄴🄱
+
+◍ !waifu
+◍ !neko
+◍ !wallpaperanime
+
+Sooooo, My work is done. Bye! 
+
+Any problem? Remember me :)
           
        
 
