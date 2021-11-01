@@ -4,7 +4,15 @@ import qrImage from 'qr-image'
 import { existsSync, writeFileSync } from 'fs'
 import moment from 'moment'
 import { join } from 'path'
-import { IConfig, IExtendedGroupMetadata, IGroupModel, ISession, ISimplifiedMessage, IUserModel } from '../typings'
+import {
+    IConfig,
+    IExtendedGroupMetadata,
+    IFeatureModel,
+    IGroupModel,
+    ISession,
+    ISimplifiedMessage,
+    IUserModel
+} from '../typings'
 import Utils from './Utils'
 import DatabaseHandler from '../Handlers/DatabaseHandler'
 import axios from 'axios'
@@ -128,7 +136,7 @@ export default class WAClient extends Base {
 
     log = (text: string, error?: boolean): void => {
         console.log(
-            chalk[error ? 'red' : 'green']('[VOID]'),
+            chalk[error ? 'red' : 'green']('[KAOI]'),
             chalk.blue(moment(Date.now() * 1000).format('DD/MM HH:mm:ss')),
             chalk.yellowBright(text)
         )
@@ -209,11 +217,32 @@ export default class WAClient extends Base {
 
     getGroupData = async (jid: string): Promise<IGroupModel> =>
         (await this.DB.group.findOne({ jid })) || (await new this.DB.group({ jid }).save())
+
+    getFeatures = async (feature: string): Promise<IFeatureModel> =>
+        (await this.DB.feature.findOne({ feature })) || (await new this.DB.feature({ feature }).save())
+
+    features = new Map<string, boolean>()
+
+    // set the values to the db
+    setFeatures = async (): Promise<void> => {
+        const dbfeatures = await this.DB.feature.find()
+        for (const feature of dbfeatures) {
+            this.features.set(feature.feature.toString(), feature.state)
+        }
+    }
+    // get the value of a feature
+    isFeature = (feature: string): boolean => this.features.get(feature) || false
+
+    setFeature = (feature: string, value: boolean): void => {
+        this.features.set(feature, value)
+    }
 }
 
 export enum toggleableGroupActions {
     events = 'events',
     NSFW = 'nsfw',
     safe = 'safe',
-    mod = 'mod'
+    mod = 'mod',
+    cmd = 'cmd',
+    invitelink = 'invitelink'
 }
