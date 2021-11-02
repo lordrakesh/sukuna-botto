@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         let sukuna = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `Konnichiwa! *${M.sender.username}*, *I'm Sukunai!* I'm ready for help.
+            caption: `Konnichiwa! *${M.sender.username}*, *I'm Sukunai!* Know your place Fool.
 
 My perfix - !
 
@@ -37,41 +37,67 @@ My perfix - !
 ◍!support
 ◍!xp
 ◍!weather
+◍!crypto
 ◍!sukuna
 ◍!bot/chat
 
 - 🄼🄴🄳🄸🄰
 
-◍ !sticker
-◍ !toimg
-◍ !play
-◍ !ytmp3
-◍ !ytmp4
-◍ !yts
-◍ !fb
-◍ !ig
-◍ !subreddit
+◍!play
+◍!yta
+◍!ytv
+◍!yts
+◍!spotify
+◍!karaoke
+◍!lyrics
+◍!rpaper
+◍!subred
+◍!sticker
+◍!blur
 
- *- 🄰🄳🄼🄸🄽* 
+- 🄰🄳🄼🄸🄽
 
-◍ !add
-◍ !kick
-◍ !promote
-◍ !demote
-◍ !enable antilink
-◍ !tagall
-◍ !hidetag
-◍ !linkgroup
+◍!tagall
+◍!purge
+◍!admin
+◍!promote
+◍!demote
+◍!remove
+◍!open
+◍!close
+◍!revoke
+◍!change (sub/desc)
+◍!nsfw (act/deact)
+◍!events (act/, deact)
+
+- 🄵🅄🄽
+
+◍!ship
+◍!quote
+◍!fact
+◍!hug
+◍!pat
+◍!kill
+◍!kick
+◍!dance
+◍!joke
+◍!trigger
 
 - 🅆🄴🄴🄱
 
-◍ !waifu
-◍ !neko
-◍ !wallpaperanime
+◍!waifu
+◍!husbando
+◍!loli
+◍!neko
+◍!animequote
+
+- 🄷🄴🄽🅃🄰🄸
+
+Cᴏᴍɪɴɢ Sᴏᴏɴ 🍑
+<><><><><><><>
 
 Sooooo, My work is done. Bye! 
-
-Any problem? Remember me :)` }
+Don't Summon Me Again (๑•﹏•)` }
         )
     }
 }
