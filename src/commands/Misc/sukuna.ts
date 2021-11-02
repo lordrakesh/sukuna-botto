@@ -8,16 +8,16 @@ import { ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'sukuna',
+            command: 'help',
             description: 'Say hi to the bot.',
-            category: 'misc',
-            usage: `${client.config.prefix}sukuna`
+            category: 'general',
+            usage: `${client.config.prefix}help`
         })
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            './assets/videos/Sukuna/sukuna-hi.mp4'
+            './assets/videos/Sukuna/sukuna.mp4'
         ]
         let sukuna = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
