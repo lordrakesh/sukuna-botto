@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
                 }
             }
             let text = `
-Konichiwa! ${M.sender.username}, I'm Sukuna , Know Your Place Fool 太陽
+Konichiwa! ${M.sender.username}, I'm Abhi , Know Your Place Fool 太陽
 
 My Pefix - /                 \n\n`
             const keys = Object.keys(categories)
